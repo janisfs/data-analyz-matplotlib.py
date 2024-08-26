@@ -40,9 +40,8 @@ import matplotlib.pyplot as plt
 x = [1, 4, 6, 7]
 y = [3, 5, 8, 10]
 
-plt.scatter(x, y)
-
-plt.title("Тестовая диаграмма распределения")
+plt.scatter(x, y)  # Построение диаграммы рассеяния
+plt.title("Тестовая диаграмма распределения")  # Название графика
 plt.xlabel("Ось X")
 plt.ylabel("Ось Y")
 
