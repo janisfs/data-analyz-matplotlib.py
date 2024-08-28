@@ -9,7 +9,7 @@ plt.figure(figsize=(10, 6))
 plt.hist(df['Price'], bins=20, color='blue', edgecolor='black')
 
 # Шаг 3: Настройка графика
-plt.title('Гистограмма цен на квартиры')
+plt.title('Гистограмма цен на квартиры')  # Название графика
 plt.xlabel('Цена (₽)')
 plt.ylabel('Количество предложений')
 plt.grid(True)
