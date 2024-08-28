@@ -35,9 +35,9 @@ csv_file = 'price_divans.csv'
 with open(csv_file, mode='w', newline='', encoding='utf-8') as file:
     writer = csv.writer(file)
     writer.writerow(['Price'])  # Заголовок
-    for price in prices:
+    for price in prices:  # Применение функции ко всем значениям в столбце 'Price'
         price_text = price.text.strip()
-        if any(char.isdigit() for char in price_text):
+        if any(char.isdigit() for char in price_text):  # Проверка наличия цифр
             writer.writerow([price_text])
 
 
