@@ -19,10 +19,10 @@ url = 'https://www.divan.ru/category/divany-i-kresla'
 driver.get(url)
 
 # Подождите немного, чтобы страница полностью загрузилась
-time.sleep(5)
+time.sleep(10)
 
 # Поиск элементов с ценами
-prices = driver.find_elements(By.XPATH, "//span[@class='ui-LD-ZU KIkOH']/span")
+prices = driver.find_elements(By.XPATH, "//div[@class='q5Uds']/span")
 
 # Сохранение цен в CSV файл
 csv_file = 'price_divans.csv'
